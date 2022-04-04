@@ -1,0 +1,33 @@
+.homepage-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  min-height: calc(100vh - 6rem);
+}
+
+.side-editor {
+  background: white;
+  color: black;
+  display: flex;
+  height: calc(100vh - 6rem);
+  border-left: 1px solid rgb(214, 214, 214);
+}
+
+.side-editor-bar {
+  padding: 0 12px;
+}
+
+.side-editor-content {
+  width: 100%;
+  margin: 16px;
+}
+
+.side-editor-content>textarea {
+  width: 95%;
+  height: 95%;
+  overflow-y: scroll;
+  padding: 10px;
+  border: 1px solid rgb(214, 214, 214);
+  outline: none;
+  resize: none;
+}
