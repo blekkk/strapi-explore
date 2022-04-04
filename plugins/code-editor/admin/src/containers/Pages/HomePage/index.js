@@ -5,7 +5,6 @@
  */
 import './HomePage.css';
 import React, { memo, useState } from 'react';
-import InnerHTML from 'dangerously-set-html-content'
 
 const HomePage = () => {
   const [code, setCode] = useState(`// Enter source code here
@@ -16,7 +15,7 @@ const HomePage = () => {
 
   return (
     <div className='homepage-wrapper'>
-      <InnerHTML html={code} style={{width: '60%', height: 'calc(100vh - 6rem)', overflowY: 'scroll'}}/>
+      <iframe srcDoc={code} style={{width: '60%', height: 'calc(100vh - 6rem)', overflowY: 'scroll'}}></iframe>
       <div style={{width: '40%'}}>
         <div className='side-editor'>
           <div className='side-editor-content'>
