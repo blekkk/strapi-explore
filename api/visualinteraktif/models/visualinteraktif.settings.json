@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "visualinteraktifs",
+  "info": {
+    "name": "visualinteraktif"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "script": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

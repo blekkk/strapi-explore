@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/api/visual-interaktif",
+      "handler": "visualinteraktif.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/visual-interaktif/count",
+      "handler": "visualinteraktif.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/visual-interaktif/:url",
+      "handler": "visualinteraktif.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/visual-interaktif",
+      "handler": "visualinteraktif.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/api/visual-interaktif/:url",
+      "handler": "visualinteraktif.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/visual-interaktif/:url",
+      "handler": "visualinteraktif.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
